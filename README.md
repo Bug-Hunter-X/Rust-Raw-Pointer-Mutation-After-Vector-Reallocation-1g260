@@ -1,0 +1,3 @@
+# Rust Raw Pointer Mutation After Vector Reallocation
+
+This repository demonstrates a common error in Rust involving raw pointers and vector reallocations.  The code attempts to modify a vector's contents through a raw pointer, but this leads to undefined behavior if the vector's capacity changes (e.g., due to a push or resize operation).  The solution shows a safer approach using vector indexing or borrowing.
